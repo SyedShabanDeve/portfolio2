@@ -1,0 +1,18 @@
+{
+  "name": "Syed Shaban Ahmad — Full Stack Developer",
+  "short_name": "Syed Shaban",
+  "description": "Portfolio of Syed Shaban Ahmad, a full stack developer working with the MERN stack, Shopify and WordPress.",
+  "start_url": "/portfolio2/",
+  "scope": "/portfolio2/",
+  "display": "standalone",
+  "background_color": "#07070a",
+  "theme_color": "#07070a",
+  "icons": [
+    {
+      "src": "/portfolio2/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

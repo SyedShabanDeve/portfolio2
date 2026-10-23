@@ -1,0 +1,6 @@
+# Binary assets: never let line-ending conversion touch them.
+*.pdf binary
+*.docx binary
+*.webp binary
+*.png binary
+*.jpg binary
