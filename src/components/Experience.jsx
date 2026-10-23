@@ -105,25 +105,25 @@ export default function Experience() {
         </div>
 
         <div className="edu-grid">
-          <Reveal className="card edu-card edu-card--accent spot">
-            <span className="eyebrow">
-              <Icon name="cap" size={14} />
-              Education
-            </span>
-            <h3>
-              {EDUCATION.degree} — {EDUCATION.school}
-            </h3>
-            <p>
-              {EDUCATION.location} · {EDUCATION.period}
-              <br />
-              {EDUCATION.detail} · CGPA <strong>{EDUCATION.grade}</strong>
-            </p>
-          </Reveal>
+          {EDUCATION.map((edu, i) => (
+            <Reveal className={`card edu-card spot${i === 0 ? " edu-card--accent" : ""}`} key={edu.degree} delay={80 * i}>
+              <span className="eyebrow">
+                <Icon name="cap" size={14} />
+                Education · {edu.period}
+              </span>
+              <h3>{edu.degree}</h3>
+              <p>
+                {edu.school}
+                <br />
+                {edu.detail} · <strong>{edu.grade}</strong>
+              </p>
+            </Reveal>
+          ))}
 
-          <Reveal className="card edu-card spot" delay={80}>
+          <Reveal className="card edu-card spot" delay={160}>
             <span className="eyebrow">
               <Icon name="award" size={14} />
-              Certification
+              Certifications
             </span>
             <ul className="edu-list">
               {CERTIFICATIONS.map((cert) => (

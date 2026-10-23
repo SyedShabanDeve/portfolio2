@@ -127,7 +127,7 @@ export default function Hero({ theme, onOpenProject }) {
             <div className="hero__stat" key={stat.label}>
               <dt>{stat.label}</dt>
               <dd>
-                <CountUp value={stat.value} decimals={stat.decimals} suffix={stat.suffix} />
+                <CountUp value={stat.value} from={stat.from} decimals={stat.decimals} suffix={stat.suffix} />
               </dd>
             </div>
           ))}

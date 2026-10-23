@@ -76,7 +76,15 @@ function PlaceTile() {
         <Icon name={daytime ? "sun" : "moon"} size={14} />
         {daytime ? "Daytime" : "Night-time"} here · PKT, UTC+5
       </p>
-      <span className="place__globe" aria-hidden="true" />
+      <img
+        className="place__photo"
+        src={resumeUrl(PROFILE.photo)}
+        alt={`Portrait of ${PROFILE.fullName}`}
+        width="640"
+        height="640"
+        loading="lazy"
+        decoding="async"
+      />
     </>
   );
 }

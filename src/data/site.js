@@ -24,8 +24,9 @@ export const PROFILE = {
   site: "https://syedshabandeve.github.io/portfolio2/",
   resume: "Syed-Shaban-Ahmad-CV.pdf",
   resumeDocx: "Syed-Shaban-Ahmad-CV.docx",
+  photo: "syed-shaban-ahmad.webp",
   available: true,
-  availability: "Open to full-time roles — remote or Lahore-based",
+  availability: "Open to full-time roles — remote or on-site",
   responseTime: "Usually replies within a few hours",
   tagline:
     "I build production web applications end to end — React front ends, secure Node and Express APIs on MongoDB, Shopify storefronts and custom WordPress and WooCommerce platforms.",
@@ -58,19 +59,18 @@ export const NAV = [
 ];
 
 export const STATS = [
-  { value: 3, suffix: "+", label: "Years building" },
+  { value: 2022, from: 1998, label: "Freelancing since" },
+  { value: 2024, from: 2000, label: "Full-time MERN since" },
   { value: 10, suffix: "+", label: "Projects shipped" },
   { value: 3, label: "Countries served" },
-  { value: 3.4, decimals: 1, label: "CGPA / 4.0" },
 ];
-
 export const ABOUT = {
   lead:
     "Full stack developer with three years of professional and freelance experience across the MERN stack, Shopify and WordPress.",
   body: [
-    "I take client projects from the first brief all the way through to deployment and maintenance — scoping the work, building the front end and the API behind it, putting it live, and staying on for the fixes that follow launch.",
-    "Most of what I build runs in production today: a news publication with a role-based editorial dashboard, a Shopify store rebuilt section by section, WooCommerce stores with bespoke child themes and payment gateways, and corporate sites tuned for speed. Clients have been based in Pakistan, the UAE and the United States.",
-    "I am currently in the final semester of a BS in Computer Science at Riphah International University, Lahore.",
+    "I work full time at Sani IT-Consultant in Lahore. I started there as a frontend intern in 2023 and moved into the MERN developer role in 2024. Day to day that means React front ends, REST APIs, JWT authentication with role-based access, and going back into endpoints that got slow once the data grew.",
+    "Alongside that I have been freelancing since 2022 for clients in Pakistan, the UAE and the United States, most recently rebuilding a Shopify store section by section. That work covers the parts that are not code as well: scoping with a client who is not technical, hosting and DNS, migrations, and being the person who answers when something breaks after handover.",
+    "I am studying for a BS in Computer Science at Riphah International University, Lahore, alongside full-time work, after completing an Associate Degree in Information Technology there.",
   ],
   highlights: [
     {
@@ -180,65 +180,68 @@ export const EXPERIENCE = [
     period: "Jan 2024 — Present",
     current: true,
     role: "MERN Stack Developer",
-    company: "Private Firm",
-    location: "Lahore, Pakistan",
+    company: "Sani IT-Consultant",
+    location: "Lahore · On-site",
     type: "Full-time",
     bullets: [
-      "Build React front ends with reusable component systems and Context API state.",
-      "Write and maintain Express REST APIs over MongoDB, including schema design and reworking slow endpoints.",
-      "Implement JWT authentication with role-based route protection across the app.",
-      "Cut first-load weight on multi-page builds by moving inner routes behind React.lazy.",
+      "Build React front ends with reusable components and Context API state management across client projects.",
+      "Write and maintain Node.js and Express REST APIs over MongoDB, including schema design, query optimisation and fixing endpoints that slowed down as the data grew.",
+      "Implement JWT authentication with role-based route protection for admin, editor and standard user roles.",
+      "Cut first-load bundle weight on multi-page builds by moving inner routes behind React.lazy and code splitting.",
+      "Debug and refactor existing codebases, and hand over documented work to clients and the internal team.",
     ],
     stack: ["React", "Node.js", "Express", "MongoDB", "JWT"],
   },
   {
     period: "Jun 2023 — Dec 2023",
     role: "Web Development Intern",
-    company: "Sani IT Consultant",
-    location: "Lahore, Pakistan",
+    company: "Sani IT-Consultant",
+    location: "Lahore",
     type: "Internship",
     bullets: [
-      "Six-month frontend programme covering HTML, CSS, JavaScript and early React.",
+      "Six-month frontend internship working in HTML5, CSS3, JavaScript and React.",
       "Contributed to live client websites under a senior developer's review.",
-      "Customised WordPress themes and configured plugins against client requirements.",
-      "Awarded an official internship certificate on completion.",
+      "Customised WordPress themes and configured plugins to match client requirements.",
     ],
     stack: ["HTML5", "CSS3", "JavaScript", "React", "WordPress"],
   },
   {
-    period: "2022 — Present",
+    period: "Jan 2022 — Present",
+    current: true,
     role: "Freelance Web Developer",
     company: "Self-employed",
     location: "Remote",
     type: "Freelance",
     bullets: [
-      "Rebuilt the Elite Zone Shopify store: custom theme sections, cash-on-delivery and WhatsApp ordering, and theme releases scripted through the Admin GraphQL API.",
-      "Built custom WordPress websites for clients in Pakistan, the UAE and the United States.",
-      "Delivered WooCommerce stores end to end: catalogue setup, payment gateways and order handling.",
+      "Rebuilt the Elite Zone Shopify store section by section: custom theme sections, cash-on-delivery and WhatsApp ordering, and every release staged on a preview theme before going live.",
+      "Build and deliver custom WordPress websites for clients in Pakistan, the UAE and the United States.",
+      "Deliver WooCommerce stores end to end: catalogue setup, payment gateways, shipping rules and order handling.",
       "Set up Brilliant Directory platforms for membership and listing-based businesses.",
-      "Handled hosting, DNS, migrations and post-launch fixes directly with clients.",
+      "Handle hosting, DNS, deployment, migrations and post-launch fixes directly with clients.",
     ],
-    stack: ["Shopify", "Liquid", "WordPress", "WooCommerce", "PHP", "cPanel"],
+    stack: ["Shopify", "Liquid", "WordPress", "WooCommerce", "Elementor", "cPanel"],
   },
 ];
-
-export const EDUCATION = {
-  degree: "BS Computer Science",
-  school: "Riphah International University",
-  location: "Lahore, Pakistan",
-  period: "2023 — 2026",
-  detail: "Final semester · expected graduation 2026",
-  grade: "3.4 / 4.0",
-};
-
-export const CERTIFICATIONS = [
+export const EDUCATION = [
   {
-    name: "Web Development Internship Certificate",
-    issuer: "Sani IT Consultant",
-    year: "2023",
+    degree: "BS Computer Science",
+    school: "Riphah International University, Lahore",
+    period: "2026 — 2028",
+    detail: "In progress, alongside full-time work",
+    grade: "CGPA 3.4 / 4.0",
+  },
+  {
+    degree: "Associate Degree in Information Technology",
+    school: "Riphah International University, Lahore",
+    period: "2023 — 2025",
+    detail: "Completed",
+    grade: "CGPA 3.66 / 4.0",
   },
 ];
-
+export const CERTIFICATIONS = [
+  { name: "Microsoft Azure Fundamentals (AZ-900)", issuer: "Microsoft", year: "2023" },
+  { name: "Web Development Internship Certificate", issuer: "Sani IT-Consultant", year: "2024" },
+];
 export const LANGUAGES = [
   { name: "Urdu", level: "Native" },
   { name: "English", level: "Professional working proficiency" },
@@ -402,13 +405,40 @@ export const PROJECTS = [
     },
   },
   {
+    id: "styleandcarry",
+    name: "Style & Carry",
+    kind: "E-commerce store",
+    year: "2026",
+    categories: ["oss"],
+    summary:
+      "Online store for wallets, watches and bags in Pakistan: category browsing, search, order tracking, wishlist and cart, with cash on delivery.",
+    tags: ["JavaScript", "E-commerce", "Netlify"],
+    url: "https://styleandcarry.netlify.app/",
+    domain: "styleandcarry.netlify.app",
+    repo: "https://github.com/SyedShabanDeve/foldandcarry",
+    image: "styleandcarry",
+    accent: "gold",
+    details: {
+      role: "Solo build",
+      timeline: "2026",
+      overview:
+        "An online store for wallets, watches and bags, built for shoppers in Pakistan who pay cash on delivery.",
+      built: [
+        "Category browsing and product search.",
+        "A cart and a wishlist.",
+        "Order tracking.",
+        "Cash on delivery at checkout.",
+      ],
+    },
+  },
+  {
     id: "uforuae",
     name: "UFO R UAE",
     kind: "WordPress · WooCommerce",
     year: "2025",
     categories: ["wordpress"],
     summary:
-      "UAE-based WooCommerce store with a bespoke child theme, plugin integrations, configured payment gateways and a performance-tuned product catalogue.",
+      "UAE-based WooCommerce store with a bespoke child theme, plugin integrations, configured payment gateways and a performance-tuned product catalogue. Being relaunched.",
     tags: ["WordPress", "WooCommerce", "PHP", "CSS"],
     url: "https://www.uforuae.com",
     domain: "uforuae.com",
@@ -435,8 +465,9 @@ export const PROJECTS = [
     summary:
       "Seven-page corporate site where every inner page is lazy-loaded into its own chunk, with hash-aware scroll restoration on navigation and an SPA redirect config for Netlify.",
     tags: ["React 19", "React Router 7", "Code splitting", "Netlify"],
+    url: "https://saniitconsultant.netlify.app/",
     repo: "https://github.com/SyedShabanDeve/sani-corporate-website",
-    domain: "sani-corporate-website",
+    domain: "saniitconsultant.netlify.app",
     image: "sani-react",
     accent: "azure",
     details: {

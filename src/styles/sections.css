@@ -789,34 +789,18 @@
 .place__zone svg {
   color: var(--gold);
 }
-/* A dotted sphere with Lahore marked on it. */
-.place__globe {
+/* The portrait sits in the corner of the Lahore tile, ringed in the accent gradient. */
+.place__photo {
   position: absolute;
-  right: -46px;
-  bottom: -56px;
-  width: 230px;
-  height: 230px;
+  top: clamp(1.1rem, 2.4vw, 1.7rem);
+  right: clamp(1.1rem, 2.4vw, 1.7rem);
+  width: clamp(92px, 9vw, 128px);
+  height: clamp(92px, 9vw, 128px);
   border-radius: 50%;
-  background-image: radial-gradient(circle at 34% 30%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 58%),
-    radial-gradient(var(--text-3) 1.1px, transparent 1.6px);
-  background-size: 100% 100%, 11px 11px;
-  border: 1px solid var(--border-2);
-  mask-image: radial-gradient(circle, #000 58%, transparent 71%);
-  -webkit-mask-image: radial-gradient(circle, #000 58%, transparent 71%);
-  opacity: 0.85;
-}
-.place__globe::after {
-  content: '';
-  position: absolute;
-  top: 31%;
-  left: 36%;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--accent);
-  color: var(--accent);
-  box-shadow: 0 0 0 4px var(--accent-soft);
-  animation: pulse-dot 2.4s infinite;
+  object-fit: cover;
+  padding: 3px;
+  background: var(--grad);
+  box-shadow: 0 18px 40px -18px var(--accent);
 }
 
 .hl__icon {
