@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://syedshabandeve.github.io/portfolio2/sitemap.xml
