@@ -63,7 +63,6 @@ written for this project.
 | Icons | Inline SVG sprite in `components/ui/Icon.jsx`, plus brand marks from [Simple Icons](https://simpleicons.org) (CC0) inlined in `data/logos.js` — no icon package, no icon requests |
 | Type | Bricolage Grotesque, Geist, Geist Mono and Instrument Serif from Google Fonts |
 | Linting | ESLint 10 (`react-hooks`, `react-refresh`) |
-| CI | GitHub Actions — lint and build on every push and PR |
 | Hosting | GitHub Pages via `gh-pages` |
 
 ## Running Locally
