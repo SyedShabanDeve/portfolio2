@@ -52,7 +52,7 @@ export default function Experience() {
     <section id="experience" className="section">
       <div className="container">
         <SectionHead
-          index="04"
+          index="05"
           eyebrow="Experience"
           title="Where I have"
           accent="worked"

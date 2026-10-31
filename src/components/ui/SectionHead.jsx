@@ -9,7 +9,7 @@ export default function SectionHead({ index, eyebrow, title, accent, lede, child
     <Reveal className={`section-head${lede ? "" : " section-head--stack"}`}>
       <div>
         <p className="eyebrow">
-          {index ? `${index} — ` : ""}
+          {index ? `${index} / ` : ""}
           {eyebrow}
         </p>
         <h2 className="section-title">

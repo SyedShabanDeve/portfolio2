@@ -54,5 +54,5 @@ export function formatTime(timestamp, timeZone, seconds = false) {
   return formatters.get(key).format(timestamp);
 }
 
-/** Hour of day (0–23) in the given time zone. */
+/** Hour of day (0-23) in the given time zone. */
 export const hourIn = (timestamp, timeZone) => Number(formatTime(timestamp, timeZone).slice(0, 2));

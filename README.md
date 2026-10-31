@@ -1,6 +1,6 @@
 <div align="center">
 
-# Syed Shaban Ahmad — Developer Portfolio · v2
+# Syed Shaban Ahmad, Developer Portfolio · v2
 
 **Full Stack Developer · MERN, Shopify &amp; WordPress · Lahore, Pakistan**
 
@@ -11,7 +11,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-6c757d?style=flat-square)](LICENSE)
 
 <a href="https://syedshabandeve.github.io/portfolio2/">
-  <img src="public/og-image.jpg" alt="Syed Shaban Ahmad — Full Stack Developer" width="720" />
+  <img src="public/og-image.jpg" alt="Syed Shaban Ahmad, Full Stack Developer" width="720" />
 </a>
 
 **→ [View it live](https://syedshabandeve.github.io/portfolio2/)**
@@ -25,12 +25,12 @@
 > This is the second design of my portfolio. The main one lives at
 > [syedshabandeve.github.io/portfolio](https://syedshabandeve.github.io/portfolio/).
 
-A single-page portfolio built from scratch — no template, no page builder, no UI kit, and no
+A single-page portfolio built from scratch, no template, no page builder, no UI kit, and no
 component library. It presents my experience, the work I have shipped, and a direct route to
 contact me.
 
-The only runtime dependencies are `react` and `react-dom`. Everything else — the design system,
-the motion, the case-study panels, the command palette, the icon set, the theme switching — is
+The only runtime dependencies are `react` and `react-dom`. Everything else, the design system,
+the motion, the case-study panels, the command palette, the icon set, the theme switching, is
 written for this project.
 
 ## Features
@@ -40,12 +40,12 @@ written for this project.
 | **Interactive hero** | A canvas dot field that swells and leans away from the cursor (and drifts on its own on touch screens), letter-by-letter name reveal, and real captures of shipped work layered at different depths that part as the pointer moves. |
 | **Case studies** | Every project opens a native `<dialog>` with the full-page capture to scroll through, phone views, what was built, role and stack. Each one has its own URL (`#work/<id>`), the browser's Back button closes it, and arrow keys move between projects. |
 | **Live captures** | Project cards show the real site; hovering a card scrolls through the whole page capture, loaded only on first hover. |
-| **Command palette** | `Ctrl K` / `⌘K` (or `/`) jumps to any section, opens any case study, copies the email, downloads the CV or switches theme — a keyboard-driven listbox built on `aria-activedescendant`. |
+| **Command palette** | `Ctrl K` / `⌘K` (or `/`) jumps to any section, opens any case study, copies the email, downloads the CV or switches theme, a keyboard-driven listbox built on `aria-activedescendant`. |
 | **Light and dark themes** | A toggle that respects `prefers-color-scheme`, persists the visitor's choice, and applies it in an inline script before first paint so the page never flashes the wrong palette. With View Transitions, the new palette wipes in as a circle from the toggle. |
 | **Design-token system** | One layer of CSS custom properties drives both palettes, a fluid `clamp()` type scale, spacing, radii and easing. Changing a token changes the whole site. |
 | **Section-aware navigation** | The nav highlight tracks whichever section is nearest the top of the viewport, and anchors to the last section at the end of the page. |
 | **Scroll progress + back to top** | A single rAF-throttled scroll listener feeds the progress bar, the sticky nav state and the back-to-top button. |
-| **Filterable project grid** | Work filters by discipline — Shopify, full stack, WordPress, open source — with featured builds given a wide showcase row, and cards gliding to their new places when the filter changes. |
+| **Filterable project grid** | Work filters by discipline, Shopify, full stack, WordPress, open source, with featured builds given a wide showcase row, and cards gliding to their new places when the filter changes. |
 | **Pointer details** | One delegated listener drives a spotlight on every card, call-to-action buttons lean toward the cursor, and the experience timeline fills as you read down it. All of it is off for touch input and reduced motion. |
 | **Reveal animations** | A reusable `Reveal` component fades content in once, then disconnects its observer so nothing keeps running off-screen. |
 | **Validated contact form** | Inline, screen-reader-linked error messages; a valid submission opens the visitor's own mail client with the whole message composed. Nothing routes through a third party. |
@@ -59,8 +59,8 @@ written for this project.
 | --- | --- |
 | Framework | React 19 |
 | Build tool | Vite 8 |
-| Styling | Hand-written CSS with custom properties — no framework |
-| Icons | Inline SVG sprite in `components/ui/Icon.jsx`, plus brand marks from [Simple Icons](https://simpleicons.org) (CC0) inlined in `data/logos.js` — no icon package, no icon requests |
+| Styling | Hand-written CSS with custom properties, no framework |
+| Icons | Inline SVG sprite in `components/ui/Icon.jsx`, plus brand marks from [Simple Icons](https://simpleicons.org) (CC0) inlined in `data/logos.js`, no icon package, no icon requests |
 | Type | Bricolage Grotesque, Geist, Geist Mono and Instrument Serif from Google Fonts |
 | Linting | ESLint 10 (`react-hooks`, `react-refresh`) |
 | Hosting | GitHub Pages via `gh-pages` |
@@ -130,12 +130,12 @@ portfolio2/
 └── vite.config.js                # `base` is /portfolio2/ for GitHub Pages
 ```
 
-Content lives in `src/data/site.js` and nowhere else — components read from it, so updating a
+Content lives in `src/data/site.js` and nowhere else, components read from it, so updating a
 job, a project or a skill never means touching markup.
 
 ## Adding a project
 
-1. Add an entry to `PROJECTS` in `src/data/site.js` — copy an existing one. `details` is what the
+1. Add an entry to `PROJECTS` in `src/data/site.js`, copy an existing one. `details` is what the
    case-study panel shows; `featured: true` gives it a wide showcase row.
 2. Put its captures in `public/work/`, named after the project's `image` key:
 
@@ -160,10 +160,10 @@ URLs in `index.html` (canonical, `og:url`, `og:image`) plus `sitemap.xml`, `robo
 
 ## Contact
 
-- **Email** — [syedshaban785@gmail.com](mailto:syedshaban785@gmail.com)
-- **LinkedIn** — [syedshaban785](https://www.linkedin.com/in/syedshaban785)
-- **GitHub** — [SyedShabanDeve](https://github.com/SyedShabanDeve)
-- **Location** — Lahore, Pakistan · open to remote work
+- **Email**, [syedshaban785@gmail.com](mailto:syedshaban785@gmail.com)
+- **LinkedIn**, [syedshaban785](https://www.linkedin.com/in/syedshaban785)
+- **GitHub**, [SyedShabanDeve](https://github.com/SyedShabanDeve)
+- **Location**, Lahore, Pakistan · open to remote work
 
 ## License
 

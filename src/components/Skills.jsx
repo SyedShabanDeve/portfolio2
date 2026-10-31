@@ -1,9 +1,12 @@
 import { logoFor } from "../data/logos";
-import { CORE_STACK, SKILL_GROUPS } from "../data/site";
+import { AI_SKILLS, CORE_STACK, SKILL_GROUPS } from "../data/site";
 import Icon from "./ui/Icon";
 import Reveal from "./ui/Reveal";
 import SectionHead from "./ui/SectionHead";
 import TechLogo from "./ui/TechLogo";
+
+/* The AI group closes the grid. */
+const GROUPS = [...SKILL_GROUPS, AI_SKILLS];
 
 /** Tools whose brand mark is unreadable at this size get a plain icon instead. */
 const FALLBACK_ICON = { WooCommerce: "cart" };
@@ -55,7 +58,7 @@ export default function Skills() {
 
       <div className="container">
         <div className="skills__grid">
-          {SKILL_GROUPS.map((group, i) => (
+          {GROUPS.map((group, i) => (
             <Reveal className="card skill-card spot" key={group.id} delay={70 * i}>
               <div className="skill-card__head">
                 <span className="skill-card__icon">

@@ -90,7 +90,7 @@ export default function Footer({ onOpenPalette }) {
           </button>
           <span className="footer__made">
             <Icon name="code" size={13} />
-            Hand-built with React &amp; Vite — no UI libraries
+            Hand-built with React &amp; Vite, no UI libraries
           </span>
         </div>
       </div>

@@ -21,7 +21,7 @@ function ContactRow({ icon, label, value, href, copyable = false, external = fal
       setCopied(true);
       setTimeout(() => setCopied(false), 1800);
     } catch {
-      /* clipboard blocked — the link beside it still works */
+      /* clipboard blocked, the link beside it still works */
     }
   };
 
@@ -62,7 +62,7 @@ export default function Contact() {
       <span className="glow contact__glow" />
       <div className="container">
         <Reveal className="contact__hero">
-          <p className="eyebrow">06 — Contact</p>
+          <p className="eyebrow">07 / Contact</p>
           <h2 className="contact__title">
             <SplitWords text="Have a role or a project?" />{" "}
             <span className="contact__title-accent">
@@ -70,7 +70,7 @@ export default function Contact() {
             </span>
           </h2>
           <p className="section-lede">
-            {PROFILE.availability}. Freelance projects welcome too — tell me what you need and I will come
+            {PROFILE.availability}. Freelance projects are welcome too. Tell me what you need and I will come
             back with a plan.
           </p>
           <div className="contact__quick">

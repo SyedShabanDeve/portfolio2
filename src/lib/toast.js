@@ -9,10 +9,10 @@ export const TOAST_EVENT = EVENT;
 export async function copyText(text, label = "Copied") {
   try {
     await navigator.clipboard.writeText(text);
-    toast(`${label} — copied to clipboard`);
+    toast(`${label}, copied to clipboard`);
     return true;
   } catch {
-    toast("Copy was blocked — select the text instead");
+    toast("Copy was blocked, select the text instead");
     return false;
   }
 }

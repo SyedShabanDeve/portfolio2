@@ -1,7 +1,7 @@
 import { LOGOS } from "../../data/logos";
 
 /**
- * One inline sprite for the whole site — no icon package, no network request.
+ * One inline sprite for the whole site, no icon package, no network request.
  * Stroke icons inherit `currentColor`; brand marks are filled.
  */
 const STROKE = {

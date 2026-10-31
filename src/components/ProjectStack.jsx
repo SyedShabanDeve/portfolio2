@@ -5,7 +5,7 @@ import BrowserFrame from "./ui/BrowserFrame";
 import Icon from "./ui/Icon";
 import PhoneFrame from "./ui/PhoneFrame";
 
-/** Back to front — the newest work sits on top. */
+/** Back to front, the newest work sits on top. */
 const ORDER = ["times", "nexora", "elitezone"];
 const CARDS = ORDER.map((id) => PROJECTS.find((project) => project.id === id));
 

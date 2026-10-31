@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 /**
- * One scroll listener for the whole page: how far down we are (0–1) and
+ * One scroll listener for the whole page: how far down we are (0-1) and
  * whether we have moved past the fold.
  */
 export function useScrollState(stuckAfter = 40) {

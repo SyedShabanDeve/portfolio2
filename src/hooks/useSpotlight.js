@@ -5,7 +5,7 @@ import { CAN_HOVER_FX } from "../lib/motion";
  * One pointer listener for every `.spot` surface on the page. It writes the
  * pointer position into --mx / --my (pixels) and --sx / --sy (-0.5…0.5 from
  * the centre) on whichever card is under the cursor; CSS draws the glow and
- * the tilt — no per-card listeners, no re-renders.
+ * the tilt, no per-card listeners, no re-renders.
  */
 export function useSpotlight() {
   useEffect(() => {

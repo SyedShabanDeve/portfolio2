@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useState } from "react";
 import About from "./components/About";
+import AIWorkflow from "./components/AIWorkflow";
 import BackToTop from "./components/BackToTop";
+import Challenges from "./components/Challenges";
 import CommandPalette from "./components/CommandPalette";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
@@ -76,8 +78,10 @@ export default function App() {
         <Hero theme={theme} onOpenProject={openProject} />
         <Marquee />
         <Projects onOpenProject={openProject} />
+        <Challenges onOpenProject={openProject} />
         <About />
         <Skills />
+        <AIWorkflow />
         <Experience />
         <Services />
         <Contact />

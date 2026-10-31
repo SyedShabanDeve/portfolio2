@@ -66,7 +66,7 @@ export function useTheme() {
     try {
       localStorage.setItem(STORAGE_KEY, next);
     } catch {
-      /* private browsing — the choice just will not persist */
+      /* private browsing, the choice just will not persist */
     }
 
     const commit = () => {
@@ -95,7 +95,7 @@ export function useTheme() {
         );
       })
       .catch(() => {
-        /* transition skipped — the theme has already been applied */
+        /* transition skipped, the theme has already been applied */
       });
   }, []);
 

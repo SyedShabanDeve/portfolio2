@@ -10,11 +10,11 @@ export default function Services() {
     <section id="services" className="section services-section">
       <div className="container">
         <SectionHead
-          index="05"
+          index="06"
           eyebrow="Services"
           title="How I can"
           accent="help"
-          lede="Hiring for a role or need a single project delivered — this is the work I take on, and how each project runs from brief to after-launch."
+          lede="Hiring for a role or need a single project delivered? This is the work I take on, and how each project runs from brief to after-launch."
         />
 
         <div className="services">

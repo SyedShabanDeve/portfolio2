@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { PROJECTS } from "../data/site";
+import { CHALLENGES, PROJECTS } from "../data/site";
 import { useLockScroll } from "../hooks/useLockScroll";
 import { workImage } from "../lib/media";
 import Cover from "./ui/Cover";
@@ -7,8 +7,8 @@ import Icon from "./ui/Icon";
 import PhoneFrame from "./ui/PhoneFrame";
 import TechLogo from "./ui/TechLogo";
 
-/** "Product page — savings badge…" → "Product page" for the gallery tabs. */
-const shortLabel = (caption) => caption.split(" — ")[0];
+/** "Product page, savings badge…" → "Product page" for the gallery tabs. */
+const shortLabel = (caption) => caption.split(": ")[0];
 
 function CaseStudy({ project, index, onOpenProject }) {
   const prev = PROJECTS[(index - 1 + PROJECTS.length) % PROJECTS.length];
@@ -17,12 +17,13 @@ function CaseStudy({ project, index, onOpenProject }) {
 
   const views = [
     ...(project.image
-      ? [{ image: project.image, full: true, caption: "Home page — scroll inside the window to see all of it" }]
+      ? [{ image: project.image, full: true, caption: "Home page: scroll inside the window to see all of it" }]
       : []),
     ...(details.gallery ?? []).map((item) => ({ ...item, full: false })),
   ];
   const phones = details.phones ?? (project.image ? [`${project.image}-m`] : []);
   const [view, setView] = useState(0);
+  const problems = CHALLENGES.filter((c) => c.project === project.id);
   const current = views[view];
 
   return (
@@ -89,7 +90,7 @@ function CaseStudy({ project, index, onOpenProject }) {
             {!project.repo && (
               <span className="pd__private">
                 <Icon name="lock" size={12} />
-                Private repository — the code belongs to the client
+                Private repository. The code belongs to the client
               </span>
             )}
           </div>
@@ -118,7 +119,7 @@ function CaseStudy({ project, index, onOpenProject }) {
                   <img
                     key={current.image}
                     src={workImage(current.image, current.full ? "-full" : "")}
-                    alt={`${project.name} — ${current.caption}`}
+                    alt={`${project.name}: ${current.caption}`}
                     width="1280"
                     height={current.full ? undefined : 800}
                     decoding="async"
@@ -173,6 +174,25 @@ function CaseStudy({ project, index, onOpenProject }) {
                 </li>
               ))}
             </ol>
+
+            {problems.length > 0 && (
+              <>
+                <h3 className="pd__h">Problems I solved</h3>
+                <ul className="pd__probs">
+                  {problems.map((c) => (
+                    <li key={c.problem}>
+                      <p>
+                        <strong>Problem.</strong> {c.problem}
+                      </p>
+                      <p>
+                        <strong>What I did.</strong> {c.fix}
+                      </p>
+                      <p className="pd__probs-result">{c.result}</p>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
 
           <aside className="pd__aside">

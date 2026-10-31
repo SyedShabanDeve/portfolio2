@@ -5,7 +5,7 @@ import Icon from "./ui/Icon";
 import Reveal from "./ui/Reveal";
 import SectionHead from "./ui/SectionHead";
 
-/** developer.json, one line at a time — keys, punctuation and values coloured like an editor. */
+/** developer.json, one line at a time, keys, punctuation and values coloured like an editor. */
 const CODE = [
   ["{"],
   ["  ", ["k", '"name"'], ": ", ["s", `"${PROFILE.fullName}"`], ","],
@@ -112,7 +112,7 @@ export default function About() {
               {LANGUAGES.map((language) => (
                 <span className="chip" key={language.name}>
                   <Icon name="globe" size={13} />
-                  {language.name} — {language.level}
+                  {language.name}: {language.level}
                 </span>
               ))}
             </div>

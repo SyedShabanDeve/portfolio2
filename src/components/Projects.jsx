@@ -58,7 +58,7 @@ function ProjectLinks({ project, onOpen, primary = false }) {
         </a>
       )}
       {!project.repo && (
-        <span className="plink--none" title="Built under contract — the repository stays with the client">
+        <span className="plink--none" title="Built under contract. The repository stays with the client">
           <Icon name="lock" size={11} />
           Private repo
         </span>
@@ -97,7 +97,7 @@ function FeatureCard({ project, flip, onOpen, delay }) {
         <BrowserFrame
           image={project.image}
           url={project.domain}
-          alt={`${project.name} — first screen of the live site`}
+          alt={`${project.name}, first screen of the live site`}
           full={armed}
           cover={<Cover project={project} />}
         />
@@ -150,7 +150,7 @@ function ProjectCard({ project, onOpen, delay }) {
       <BrowserFrame
         image={project.image}
         url={project.domain}
-        alt={`${project.name} — first screen`}
+        alt={`${project.name}, first screen`}
         full={armed}
         cover={<Cover project={project} />}
         className="pcard__frame"
