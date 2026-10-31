@@ -521,7 +521,7 @@ export const PROJECTS = [
     tags: ["JavaScript", "E-commerce", "Netlify"],
     url: "https://styleandcarry.netlify.app/",
     domain: "styleandcarry.netlify.app",
-    repo: "https://github.com/SyedShabanDeve/foldandcarry",
+    repo: "https://github.com/SyedShabanDeve/style-and-carry",
     image: "styleandcarry",
     accent: "gold",
     details: {
