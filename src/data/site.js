@@ -70,7 +70,7 @@ export const ABOUT = {
     "Full stack developer with three years of professional and freelance experience across the MERN stack, Shopify and WordPress.",
   body: [
     "I work full time at Sani IT-Consultant in Lahore. I started there as a frontend intern in 2023 and moved into the MERN developer role in 2024. Day to day that means React front ends, REST APIs, JWT authentication with role-based access, and going back into endpoints that got slow once the data grew.",
-    "Alongside that I have been freelancing since 2022 for clients in Pakistan, the UAE and the United States, most recently rebuilding a Shopify store section by section. That work covers the parts that are not code as well: scoping with a client who is not technical, hosting and DNS, migrations, and being the person who answers when something breaks after handover.",
+    "Alongside that I have been freelancing since 2022 for clients in Pakistan, the UAE and the United States, most recently rebuilding a Shopify store section by section. That work covers the parts that are not code as well: scoping with a client who is not technical, hosting and DNS, migrations, and being the person who answers when something breaks after handover. I also set up the search side: Google Search Console, sitemaps, indexing, meta titles and descriptions, and structured data.",
     "I am studying for a BS in Computer Science at Riphah International University, Lahore, alongside full-time work, after completing an Associate Degree in Information Technology there.",
   ],
   highlights: [
@@ -169,6 +169,13 @@ export const SKILL_GROUPS = [
       "cPanel",
       "DNS & migrations",
     ],
+  },
+  {
+    id: "seo",
+    label: "SEO & Search",
+    icon: "search",
+    blurb: "Getting pages found: what Google indexes, how it reads them and what shows in results.",
+    items: ["Google Search Console", "XML sitemaps", "Indexing and crawl fixes", "Meta titles and descriptions", "Focus keywords", "Structured data (JSON-LD)", "Cloudflare Workers"],
   },
 ];
 
